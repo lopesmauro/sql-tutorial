@@ -19,7 +19,38 @@ Bem-vindo ao tutorial de MySQL! Neste guia, você aprenderá os conceitos fundam
 
 ## Introdução ao MySQL
 
-MySQL é um sistema de gerenciamento de banco de dados relacional (SGBD) de código aberto, que utiliza a linguagem SQL para gerenciar dados. Ele é amplamente utilizado em aplicações web e fornece uma maneira eficiente de armazenar, consultar e manipular dados.
+O MySQL é um dos sistemas de gerenciamento de bancos de dados relacionais (RDBMS) mais utilizados no mundo. Antes de começarmos, é essencial entender alguns conceitos fundamentais:
+
+### 1. Database
+Uma **database** (banco de dados) é uma coleção organizada de dados armazenados e gerenciados por um sistema de banco de dados. Ela é usada para armazenar informações de forma estruturada, permitindo fácil acesso, manipulação e gerenciamento.
+
+### 2. Table
+Uma **table** (tabela) é uma estrutura dentro de um banco de dados que organiza os dados em linhas e colunas. Cada tabela representa uma entidade ou objeto, como usuários, produtos ou transações.
+
+### 3. Column
+Uma **column** (coluna) define um campo específico em uma tabela. Ela representa uma propriedade ou atributo de uma entidade, como "Nome", "Idade" ou "Endereço".
+
+### 4. Row
+Uma **row** (linha), também chamada de registro, é uma única entrada em uma tabela que contém dados relacionados. Por exemplo, em uma tabela de "Usuários", uma linha pode representar um usuário específico com seus detalhes.
+
+### 5. Primary Key
+A **Primary Key** (chave primária) é um campo ou conjunto de campos que identifica exclusivamente cada registro em uma tabela. Ele garante que não existam registros duplicados e é essencial para a integridade dos dados.
+
+### 6. Foreign Key
+A **Foreign Key** (chave estrangeira) é um campo em uma tabela que estabelece um relacionamento com a chave primária de outra tabela. Ela é usada para garantir a integridade referencial entre tabelas relacionadas.
+
+### 7. Compound Key
+Uma **Compound Key** (chave composta) é uma chave primária formada por dois ou mais campos. Ela é usada quando nenhum campo individual pode identificar exclusivamente um registro, mas a combinação deles pode.
+
+### 8. Index
+Um **index** (índice) é uma estrutura usada para melhorar a performance de consultas no banco de dados. Ele permite que os dados sejam localizados de forma rápida sem a necessidade de varrer toda a tabela.
+
+### 9. Redundancy
+A **redundancy** (redundância) ocorre quando os mesmos dados são armazenados em vários locais no banco de dados. Embora a redundância possa ser útil em algumas situações, ela pode levar a inconsistências e desperdício de espaço se não for gerenciada adequadamente.
+
+---
+
+Agora que você conhece os conceitos fundamentais, podemos seguir para os próximos passos no tutorial.
 
 ## Instalação do MySQL
 
