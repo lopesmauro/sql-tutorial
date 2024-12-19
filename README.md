@@ -61,3 +61,26 @@ Para começar a usar o MySQL, você precisa instalá-lo. Abaixo estão as instru
 1. **Atualize o repositório de pacotes**:
    ```bash
    sudo apt update
+   sudo apt upgrade
+   ```
+
+2. **Instale o MySQL Server**:
+   ```bash
+   sudo apt install mysql-server
+   ```
+   
+3. **Verifique se o serviço está em execução**:
+   ```bash
+   sudo systemctl status mysql
+   ```
+
+4. **Configure a segurança do MySQL**:
+   ```bash
+   sudo mysql_secure_installation
+   ```
+
+5. **Verificando a instalação**:
+   ```
+   mysql -u root -p
+   ```
+
