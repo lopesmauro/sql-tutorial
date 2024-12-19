@@ -84,3 +84,9 @@ Para começar a usar o MySQL, você precisa instalá-lo. Abaixo estão as instru
    mysql -u root -p
    ```
 
+---
+
+Agora que o MySQL está instalado, você está pronto para aprender a se conectar e começar a usá-lo!
+
+
+
