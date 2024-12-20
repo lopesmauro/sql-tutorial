@@ -13,8 +13,7 @@ Bem-vindo ao tutorial de MySQL! Neste guia, você aprenderá os conceitos fundam
 7. [Funções e Operadores](#funções-e-operadores)
 8. [Gerenciamento de Usuários e Permissões](#gerenciamento-de-usuários-e-permissões)
 9. [Backup e Restauração](#backup-e-restauração)
-10. [Conclusão](#conclusão)
-
+10. [Projeto](#projeto)
 ---
 
 ## Introdução ao MySQL
