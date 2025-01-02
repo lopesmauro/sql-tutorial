@@ -87,5 +87,138 @@ Para começar a usar o MySQL, você precisa instalá-lo. Abaixo estão as instru
 
 Agora que o MySQL está instalado, você está pronto para aprender a se conectar e começar a usá-lo!
 
+## Comandos básicos 
 
+## 1. Gerenciamento de Bancos de Dados
+
+### Listar bancos de dados
+```sql
+SHOW DATABASES;
+```
+
+### Selecionar um banco de dados para usar
+```sql
+USE nome_do_banco;
+```
+
+### Criar um banco de dados
+```sql
+CREATE DATABASE nome_do_banco;
+```
+
+### Apagar um banco de dados
+```sql
+DROP DATABASE nome_do_banco;
+```
+
+---
+
+## 2. Gerenciamento de Tabelas
+
+### Mostrar tabelas no banco atual
+```sql
+SHOW TABLES;
+```
+
+### Criar uma tabela
+```sql
+CREATE TABLE nome_da_tabela (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(50),
+    idade INT
+);
+```
+
+### Exibir estrutura de uma tabela
+```sql
+DESCRIBE nome_da_tabela;
+```
+ou
+```sql
+SHOW COLUMNS FROM nome_da_tabela;
+```
+
+### Apagar uma tabela
+```sql
+DROP TABLE nome_da_tabela;
+```
+
+### Renomear uma tabela
+```sql
+RENAME TABLE nome_atual TO novo_nome;
+```
+
+---
+
+## 3. Manipulação de Dados
+
+### Inserir dados
+```sql
+INSERT INTO nome_da_tabela (nome, idade) VALUES ('João', 30);
+```
+
+### Selecionar dados
+```sql
+SELECT * FROM nome_da_tabela;
+```
+
+### Atualizar dados
+```sql
+UPDATE nome_da_tabela SET idade = 31 WHERE nome = 'João';
+```
+
+### Deletar dados
+```sql
+DELETE FROM nome_da_tabela WHERE nome = 'João';
+```
+
+---
+
+## 4. Informações sobre o Servidor
+
+### Versão do MySQL
+```sql
+SELECT VERSION();
+```
+
+### Estado do servidor
+```sql
+SHOW STATUS;
+```
+
+### Configurações atuais do servidor
+```sql
+SHOW VARIABLES;
+```
+
+---
+
+## 5. Usuários e Permissões
+
+### Listar usuários
+```sql
+SELECT User, Host FROM mysql.user;
+```
+
+### Criar usuário
+```sql
+CREATE USER 'usuario'@'localhost' IDENTIFIED BY 'senha';
+```
+
+### Conceder privilégios
+```sql
+GRANT ALL PRIVILEGES ON nome_do_banco.* TO 'usuario'@'localhost';
+```
+
+### Remover privilégios
+```sql
+REVOKE ALL PRIVILEGES ON nome_do_banco.* FROM 'usuario'@'localhost';
+```
+
+### Apagar usuário
+```sql
+DROP USER 'usuario'@'localhost';
+```
+
+---
 
