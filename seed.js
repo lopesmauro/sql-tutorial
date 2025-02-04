@@ -18,6 +18,7 @@ const main = async () => {
                 email VARCHAR(255),
                 endereco VARCHAR(255),
                 telefone VARCHAR(255),
+                salario DECIMAL(10, 2),
                 data_nascimento DATE,
                 sexo CHAR(1),
                 cpf VARCHAR(14),
@@ -36,6 +37,7 @@ const main = async () => {
             const email = faker.internet.email()
             const endereco = faker.location.streetAddress()
             const telefone = faker.phone.number()
+            const salario = faker.finance.amount(1000, 10000, 2)
             const dataNascimento = faker.date.past(30, new Date('2000-01-01')).toISOString().split('T')[0]
             const sexo = faker.helpers.arrayElement(['M', 'F'])  
             const cpf = generate() 
@@ -46,11 +48,11 @@ const main = async () => {
     
             await connection.execute(`
                 INSERT INTO usuarios 
-                    (nome, email, endereco, telefone, data_nascimento, sexo, cpf, cidade, estado, cep, descricao)
-                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    (nome, email, endereco, telefone, salario, data_nascimento, sexo, cpf, cidade, estado, cep, descricao)
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 `, 
                 [
-                    nome, email, endereco, telefone, dataNascimento, sexo, cpf, cidade, estado, cep, descricao
+                    nome, email, endereco, telefone, salario, dataNascimento, sexo, cpf, cidade, estado, cep, descricao
                 ]
             )
             console.log(`Inserindo usuário ${i+1}...`)
@@ -63,5 +65,6 @@ const main = async () => {
     
 }
 
-main()
+main()   
+
 
