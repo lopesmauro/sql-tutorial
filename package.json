@@ -1,0 +1,26 @@
+{
+  "name": "sql-tutorial",
+  "version": "1.0.0",
+  "description": "Bem-vindo ao tutorial de MySQL! Neste guia, você aprenderá os conceitos fundamentais do MySQL, como instalar, configurar e usar o banco de dados. Além disso, abordaremos operações básicas de banco de dados, como criar tabelas, inserir dados, realizar consultas e muito mais.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lopesmauro/sql-tutorial.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lopesmauro/sql-tutorial/issues"
+  },
+  "homepage": "https://github.com/lopesmauro/sql-tutorial#readme",
+  "dependencies": {
+    "@faker-js/faker": "^9.4.0",
+    "gerador-validador-cpf": "^6.0.0",
+    "mysql2": "^3.12.0"
+  }
+}
