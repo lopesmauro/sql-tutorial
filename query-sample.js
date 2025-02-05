@@ -1,6 +1,12 @@
 const SELECT_QUERY_COUNT = "SELECT COUNT(id) FROM usuarios"
+
 const QUERY_AVG = "SELECT AVG(salario) FROM usuarios"
 
+const QUERY_SUM = "SELECT SUM(salario) FROM usuarios"
+
+const QUERY_MAX = "SELECT MAX(salario) FROM usuarios"
+
+const QUERY_MIN = "SELECT MIN(salario) FROM usuarios"
 
 const SELECT_QUERY = "SELECT id, nome, telefone FROM usuarios"
 
